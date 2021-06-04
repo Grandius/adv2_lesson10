@@ -1,15 +1,16 @@
 package com.alevel;
 
-public abstract class ReportAbstract {
+public abstract class AbstractReport {
 
     protected String header;
     protected String footer;
 
-    protected ReportAbstract(String header, String footer) {
+    protected AbstractReport(String header, String footer) {
         this.header = header;
         this.footer = footer;
     }
 
     public abstract String getHeader();
+
     public abstract String getFooter();
 }
